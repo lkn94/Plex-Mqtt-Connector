@@ -2,6 +2,8 @@
 
 This connector allows to combine MQTT with the webhooks of the Plex Media Server.
 
+**Please don't forget to set the ip address of your MQTT-Server!!!**
+
 ## Example
 
 For example you can connect OpenHAB to Plex with this script. Plex will send it's webhooks to your local machine on port 5000. The script will receive this webhooks and publish a part of the content into a topic on your MQTT-Server. Items in your OpenHAB instance are able to show the latest message (player state, title and type of the media).
