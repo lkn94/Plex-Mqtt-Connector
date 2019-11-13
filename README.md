@@ -30,6 +30,13 @@ The state of your player will be published into the main topic (plex/[playerid])
 The topic for your title is called plex/[playerid]/title
 The topic for your type is called plex/[playerid]/type
 
+### Where to configure my webhooks?
+
+You need a Plex Pass to configure webhooks on your server.
+
+Every webhook should be send to: http://[IP-ADDRESS]:5000/webhook
+
+---
 
 Clone or fork this repo to add functions.
 
