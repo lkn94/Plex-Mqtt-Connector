@@ -8,6 +8,7 @@ app = Flask(__name__)
 api = Api(app)
 
 host = 'HOST_OF_MQTT'
+plexHost = 'HOST_OF_PLEX'
 topic = 'plex/'
 
 @app.route('/webhook', methods=['POST'])
@@ -18,6 +19,8 @@ def webhook():
     publish.single(topic + data['Player']['uuid'] + '/title', data['Metadata']['title'],
                    hostname=host)
     publish.single(topic + data['Player']['uuid'] + '/type', data['Metadata']['type'],
+                   hostname=host)
+    publish.single(topic + data['Player']['uuid'] + '/thumb', 'http://' + plexHost + data['Metadata']['thumb'],
                    hostname=host)
     return 'OK'
 
