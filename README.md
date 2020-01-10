@@ -36,6 +36,10 @@ You need a Plex Pass to configure webhooks on your server.
 
 Every webhook should be send to: http://[IP-ADDRESS]:5000/webhook
 
+### More information
+
+You will find more information about this project and scenarios here: https://hobbyblogging.de/heimkino-im-smart-home (German only)
+
 ---
 
 Clone or fork this repo to add functions.
