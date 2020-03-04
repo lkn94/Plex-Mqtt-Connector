@@ -1,0 +1,6 @@
+version: '2'
+services:
+  plex-mqtt-connector:
+    build: .
+    ports:
+      - "5000:5000"
